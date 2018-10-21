@@ -1,3 +1,4 @@
+package utils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -21,8 +22,8 @@ public class facebookTest {
 //		stage.facebook.com
 
 		
-		String fname = "//input[@name='firstname']";
-		String lname = "//input[@name='lastname']";
+		String fname = "//input[@name='firstname1']";
+		String lname = "//input[@name='lastname1']";
 		
 		// reusable function
 		
