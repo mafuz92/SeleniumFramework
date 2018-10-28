@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="8700" started-at="2018-10-21T15:22:11Z" finished-at="2018-10-21T15:22:20Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="8700" started-at="2018-10-21T15:22:11Z" finished-at="2018-10-21T15:22:20Z">
+      <class name="test_fbLogin.TC1_LoginWithInvalidCredential">
+        <test-method status="PASS" signature="beforeTestStart()[pri:0, instance:test_fbLogin.TC1_LoginWithInvalidCredential@457e2f02]" name="beforeTestStart" is-config="true" duration-ms="8649" started-at="2018-10-21T15:22:11Z" finished-at="2018-10-21T15:22:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestStart -->
+        <test-method status="PASS" signature="test_fbLoginWithInvalidCredential()[pri:0, instance:test_fbLogin.TC1_LoginWithInvalidCredential@457e2f02]" name="test_fbLoginWithInvalidCredential" duration-ms="11" started-at="2018-10-21T15:22:20Z" finished-at="2018-10-21T15:22:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_fbLoginWithInvalidCredential -->
+      </class> <!-- test_fbLogin.TC1_LoginWithInvalidCredential -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
