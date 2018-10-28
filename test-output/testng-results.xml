@@ -1,21 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="1" failed="0" ignored="1" total="5" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8700" started-at="2018-10-21T15:22:11Z" finished-at="2018-10-21T15:22:20Z">
+  <suite name="Default suite" duration-ms="65" started-at="2018-10-28T15:23:56Z" finished-at="2018-10-28T15:23:56Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8700" started-at="2018-10-21T15:22:11Z" finished-at="2018-10-21T15:22:20Z">
-      <class name="test_fbLogin.TC1_LoginWithInvalidCredential">
-        <test-method status="PASS" signature="beforeTestStart()[pri:0, instance:test_fbLogin.TC1_LoginWithInvalidCredential@457e2f02]" name="beforeTestStart" is-config="true" duration-ms="8649" started-at="2018-10-21T15:22:11Z" finished-at="2018-10-21T15:22:20Z">
+    <test name="Default test" duration-ms="65" started-at="2018-10-28T15:23:56Z" finished-at="2018-10-28T15:23:56Z">
+      <class name="test_PrioritySkipDisableDependsOn.TestPriority">
+        <test-method status="SKIP" signature="skipTest()[pri:0, instance:test_PrioritySkipDisableDependsOn.TestPriority@735b5592]" name="skipTest" duration-ms="16" started-at="2018-10-28T15:23:56Z" finished-at="2018-10-28T15:23:56Z">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping it becuase this test case no longer needed: JIRA-1233]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping it becuase this test case no longer needed: JIRA-1233
+at test_PrioritySkipDisableDependsOn.TestPriority.skipTest(TestPriority.java:32)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTestStart -->
-        <test-method status="PASS" signature="test_fbLoginWithInvalidCredential()[pri:0, instance:test_fbLogin.TC1_LoginWithInvalidCredential@457e2f02]" name="test_fbLoginWithInvalidCredential" duration-ms="11" started-at="2018-10-21T15:22:20Z" finished-at="2018-10-21T15:22:20Z">
+        </test-method> <!-- skipTest -->
+        <test-method status="PASS" signature="test_qa()[pri:1, instance:test_PrioritySkipDisableDependsOn.TestPriority@735b5592]" name="test_qa" duration-ms="3" started-at="2018-10-28T15:23:56Z" finished-at="2018-10-28T15:23:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_fbLoginWithInvalidCredential -->
-      </class> <!-- test_fbLogin.TC1_LoginWithInvalidCredential -->
+        </test-method> <!-- test_qa -->
+        <test-method status="PASS" signature="test1()[pri:2, instance:test_PrioritySkipDisableDependsOn.TestPriority@735b5592]" name="test1" duration-ms="3" started-at="2018-10-28T15:23:56Z" finished-at="2018-10-28T15:23:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test2()[pri:4, instance:test_PrioritySkipDisableDependsOn.TestPriority@735b5592]" name="test2" duration-ms="2" started-at="2018-10-28T15:23:56Z" finished-at="2018-10-28T15:23:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+      </class> <!-- test_PrioritySkipDisableDependsOn.TestPriority -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
