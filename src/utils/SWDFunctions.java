@@ -2,7 +2,9 @@ package utils;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+
 public class SWDFunctions {
 
 	// init the webdriver
@@ -32,7 +34,18 @@ public class SWDFunctions {
 	}
 
 	// dropdown
-
+	public void dropDownByIdUsingValue (String loc, String value){
+		WebElement mySelectElement = driver.findElement(By.id(loc));
+		Select dropdown= new Select(mySelectElement);
+		dropdown.selectByVisibleText(value);
+		
+	}
+	public void dropDownByIdUsingIndex (String loc, int x){
+		WebElement mySelectElement = driver.findElement(By.id(loc));
+		Select dropdown= new Select(mySelectElement);
+		dropdown.selectByIndex(x);
+		
+	}
 	// alert - popup
 
 	// drag n drop
