@@ -1,20 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" ignored="1" total="5" passed="3">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="65" started-at="2018-10-28T15:23:56Z" finished-at="2018-10-28T15:23:56Z">
+  <suite name="Default suite" duration-ms="9293" started-at="2018-11-04T17:52:16Z" finished-at="2018-11-04T17:52:25Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="65" started-at="2018-10-28T15:23:56Z" finished-at="2018-10-28T15:23:56Z">
-      <class name="test_PrioritySkipDisableDependsOn.TestPriority">
-        <test-method status="SKIP" signature="skipTest()[pri:0, instance:test_PrioritySkipDisableDependsOn.TestPriority@735b5592]" name="skipTest" duration-ms="16" started-at="2018-10-28T15:23:56Z" finished-at="2018-10-28T15:23:56Z">
-          <exception class="org.testng.SkipException">
+    <test name="Default test" duration-ms="9293" started-at="2018-11-04T17:52:16Z" finished-at="2018-11-04T17:52:25Z">
+      <class name="test_assert.AssertTesting">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:test_assert.AssertTesting@4678c730]" name="beforeSuite" is-config="true" duration-ms="16" started-at="2018-11-04T17:52:16Z" finished-at="2018-11-04T17:52:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test_assert.AssertTesting@4678c730]" name="setUp" is-config="true" duration-ms="9206" started-at="2018-11-04T17:52:16Z" finished-at="2018-11-04T17:52:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="testFbSignUpTest()[pri:0, instance:test_assert.AssertTesting@4678c730]" name="testFbSignUpTest" duration-ms="71" started-at="2018-11-04T17:52:25Z" finished-at="2018-11-04T17:52:25Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Skipping it becuase this test case no longer needed: JIRA-1233]]>
+              <![CDATA[expected [SignUp] but found [Sign Up]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping it becuase this test case no longer needed: JIRA-1233
-at test_PrioritySkipDisableDependsOn.TestPriority.skipTest(TestPriority.java:32)
+              <![CDATA[java.lang.AssertionError: expected [SignUp] but found [Sign Up]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at test_assert.AssertTesting.testFbSignUpTest(AssertTesting.java:25)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -42,23 +56,23 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- skipTest -->
-        <test-method status="PASS" signature="test_qa()[pri:1, instance:test_PrioritySkipDisableDependsOn.TestPriority@735b5592]" name="test_qa" duration-ms="3" started-at="2018-10-28T15:23:56Z" finished-at="2018-10-28T15:23:56Z">
+        </test-method> <!-- testFbSignUpTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test_assert.AssertTesting@4678c730]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-04T17:52:25Z" finished-at="2018-11-04T17:52:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_qa -->
-        <test-method status="PASS" signature="test1()[pri:2, instance:test_PrioritySkipDisableDependsOn.TestPriority@735b5592]" name="test1" duration-ms="3" started-at="2018-10-28T15:23:56Z" finished-at="2018-10-28T15:23:56Z">
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:test_assert.AssertTesting@4678c730]" name="closeDriver" is-config="true" duration-ms="0" started-at="2018-11-04T17:52:25Z" finished-at="2018-11-04T17:52:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test2()[pri:4, instance:test_PrioritySkipDisableDependsOn.TestPriority@735b5592]" name="test2" duration-ms="2" started-at="2018-10-28T15:23:56Z" finished-at="2018-10-28T15:23:56Z">
+        </test-method> <!-- closeDriver -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:test_assert.AssertTesting@4678c730]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-11-04T17:52:25Z" finished-at="2018-11-04T17:52:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test2 -->
-      </class> <!-- test_PrioritySkipDisableDependsOn.TestPriority -->
+        </test-method> <!-- afterSuite -->
+      </class> <!-- test_assert.AssertTesting -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

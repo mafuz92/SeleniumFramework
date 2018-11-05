@@ -10,6 +10,12 @@ public class SWDFunctions {
 	// init the webdriver
 	public WebDriver driver;
 
+	// getText
+	public void getTextByXpath (String loc){
+		WebElement convertIntoText = driver.findElement(By.xpath(loc));
+		String actText = convertIntoText.getText();
+		System.out.println ("Actual is : " +actText);
+	}
 	// to type
 	public void typeByXpath (String locator, String value){
 		driver.findElement (By.xpath(locator)).sendKeys (value);
@@ -38,13 +44,13 @@ public class SWDFunctions {
 		WebElement mySelectElement = driver.findElement(By.id(loc));
 		Select dropdown= new Select(mySelectElement);
 		dropdown.selectByVisibleText(value);
-		
+
 	}
 	public void dropDownByIdUsingIndex (String loc, int x){
 		WebElement mySelectElement = driver.findElement(By.id(loc));
 		Select dropdown= new Select(mySelectElement);
 		dropdown.selectByIndex(x);
-		
+
 	}
 	// alert - popup
 

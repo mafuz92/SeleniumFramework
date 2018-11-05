@@ -6,4 +6,6 @@ public class fb_login_values {
 	public String password_value 			= "Test.123";
 	public String password_invalid_value	= "asdfasdfasdfad";
 
+	
+	public String signUpValue 			= "SignUp";
 }

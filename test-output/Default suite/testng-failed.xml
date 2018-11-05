@@ -3,11 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test_PrioritySkipDisableDependsOn.TestPriority">
+      <class name="test_assert.AssertTesting">
         <methods>
-          <include name="skipTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="closeDriver"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testFbSignUpTest"/>
         </methods>
-      </class> <!-- test_PrioritySkipDisableDependsOn.TestPriority -->
+      </class> <!-- test_assert.AssertTesting -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

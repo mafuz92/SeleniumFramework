@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/0/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Oct 28 11:23:56 EDT 2018</td>
+<td>Started on:</td><td>Sun Nov 04 12:52:16 EST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (65 ms)</td>
+<tr><td>Total time:</td><td>9 seconds (9293 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,40 +67,23 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test_PrioritySkipDisableDependsOn.TestPriority.test1()'><b>test1</b><br>Test class: test_PrioritySkipDisableDependsOn.TestPriority</td>
-<td></td>
-<td>0</td>
-<td>test_PrioritySkipDisableDependsOn.TestPriority@735b5592</td></tr>
-<tr>
-<td title='test_PrioritySkipDisableDependsOn.TestPriority.test2()'><b>test2</b><br>Test class: test_PrioritySkipDisableDependsOn.TestPriority</td>
-<td></td>
-<td>0</td>
-<td>test_PrioritySkipDisableDependsOn.TestPriority@735b5592</td></tr>
-<tr>
-<td title='test_PrioritySkipDisableDependsOn.TestPriority.test_qa()'><b>test_qa</b><br>Test class: test_PrioritySkipDisableDependsOn.TestPriority</td>
-<td></td>
-<td>0</td>
-<td>test_PrioritySkipDisableDependsOn.TestPriority@735b5592</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='test_PrioritySkipDisableDependsOn.TestPriority.skipTest()'><b>skipTest</b><br>Test class: test_PrioritySkipDisableDependsOn.TestPriority</td>
-<td><div><pre>org.testng.SkipException: Skipping it becuase this test case no longer needed: JIRA-1233
-	at test_PrioritySkipDisableDependsOn.TestPriority.skipTest(TestPriority.java:32)
+<td title='test_assert.AssertTesting.testFbSignUpTest()'><b>testFbSignUpTest</b><br>Test class: test_assert.AssertTesting</td>
+<td><div><pre>java.lang.AssertionError: expected [SignUp] but found [Sign Up]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at test_assert.AssertTesting.testFbSignUpTest(AssertTesting.java:25)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -126,9 +109,15 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace25548982", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace25548982'><pre>org.testng.SkipException: Skipping it becuase this test case no longer needed: JIRA-1233
-	at test_PrioritySkipDisableDependsOn.TestPriority.skipTest(TestPriority.java:32)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2050339061", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2050339061'><pre>java.lang.AssertionError: expected [SignUp] but found [Sign Up]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at test_assert.AssertTesting.testFbSignUpTest(AssertTesting.java:25)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -156,7 +145,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>test_PrioritySkipDisableDependsOn.TestPriority@735b5592</td></tr>
+<td>test_assert.AssertTesting@4678c730</td></tr>
 </table><p>
 </body>
 </html>
