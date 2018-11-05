@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+  
+    <classes>
+    
+       <!-- Test from facebook Login feature -->
+      <class name="test_fbLogin.TC1_LoginWithInvalidCredential"/>
+      <class name="test_fbLogin.TC2_LoginWithInvalidPassword"/>
+      <!-- Test from facebook signup feature -->
+      <class name="test_fbSignup.CreateFBAccount"/>
+      
+    </classes>
+    
+    <packages>
+    
+    </packages>
+    
+    
+    
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

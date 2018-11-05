@@ -21,17 +21,18 @@ public class config extends SWDFunctions {
 	public void setUp(){
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//Drivers//chromedriver.exe");	
 		driver = new ChromeDriver();
+
 		driver.get("https://www.facebook.com");
 	}
 	
 	@AfterMethod
 	public void tearDown(){
-		driver.close();
+		//driver.close();
 	}
 
 	@AfterTest
 	public void closeDriver(){
-		driver.quit();
+		//driver.quit();
 	}
 	
 	@AfterSuite
