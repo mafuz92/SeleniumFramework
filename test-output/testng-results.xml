@@ -1,78 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9293" started-at="2018-11-04T17:52:16Z" finished-at="2018-11-04T17:52:25Z">
+  <suite name="Default suite" duration-ms="14762" started-at="2018-11-11T17:52:46Z" finished-at="2018-11-11T17:53:01Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9293" started-at="2018-11-04T17:52:16Z" finished-at="2018-11-04T17:52:25Z">
-      <class name="test_assert.AssertTesting">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:test_assert.AssertTesting@4678c730]" name="beforeSuite" is-config="true" duration-ms="16" started-at="2018-11-04T17:52:16Z" finished-at="2018-11-04T17:52:16Z">
+    <test name="Default test" duration-ms="14762" started-at="2018-11-11T17:52:46Z" finished-at="2018-11-11T17:53:01Z">
+      <class name="test_readWriteFromExcelFile.ReadWriteExcel">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:test_readWriteFromExcelFile.ReadWriteExcel@31c88ec8]" name="beforeSuite" is-config="true" duration-ms="12" started-at="2018-11-11T17:52:46Z" finished-at="2018-11-11T17:52:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test_assert.AssertTesting@4678c730]" name="setUp" is-config="true" duration-ms="9206" started-at="2018-11-04T17:52:16Z" finished-at="2018-11-04T17:52:25Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test_readWriteFromExcelFile.ReadWriteExcel@31c88ec8]" name="setUp" is-config="true" duration-ms="7218" started-at="2018-11-11T17:52:46Z" finished-at="2018-11-11T17:52:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="testFbSignUpTest()[pri:0, instance:test_assert.AssertTesting@4678c730]" name="testFbSignUpTest" duration-ms="71" started-at="2018-11-04T17:52:25Z" finished-at="2018-11-04T17:52:25Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [SignUp] but found [Sign Up]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [SignUp] but found [Sign Up]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at org.testng.Assert.assertEquals(Assert.java:463)
-at test_assert.AssertTesting.testFbSignUpTest(AssertTesting.java:25)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="readFromExcel()[pri:0, instance:test_readWriteFromExcelFile.ReadWriteExcel@31c88ec8]" name="readFromExcel" duration-ms="272" started-at="2018-11-11T17:52:53Z" finished-at="2018-11-11T17:52:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testFbSignUpTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test_assert.AssertTesting@4678c730]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-04T17:52:25Z" finished-at="2018-11-04T17:52:25Z">
+        </test-method> <!-- readFromExcel -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test_readWriteFromExcelFile.ReadWriteExcel@31c88ec8]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-11T17:52:53Z" finished-at="2018-11-11T17:52:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:test_assert.AssertTesting@4678c730]" name="closeDriver" is-config="true" duration-ms="0" started-at="2018-11-04T17:52:25Z" finished-at="2018-11-04T17:52:25Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test_readWriteFromExcelFile.ReadWriteExcel@31c88ec8]" name="setUp" is-config="true" duration-ms="6229" started-at="2018-11-11T17:52:53Z" finished-at="2018-11-11T17:53:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="writeFromExcel()[pri:0, instance:test_readWriteFromExcelFile.ReadWriteExcel@31c88ec8]" name="writeFromExcel" duration-ms="1014" started-at="2018-11-11T17:53:00Z" finished-at="2018-11-11T17:53:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writeFromExcel -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test_readWriteFromExcelFile.ReadWriteExcel@31c88ec8]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-11T17:53:01Z" finished-at="2018-11-11T17:53:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:test_readWriteFromExcelFile.ReadWriteExcel@31c88ec8]" name="closeDriver" is-config="true" duration-ms="0" started-at="2018-11-11T17:53:01Z" finished-at="2018-11-11T17:53:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:test_assert.AssertTesting@4678c730]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-11-04T17:52:25Z" finished-at="2018-11-04T17:52:25Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:test_readWriteFromExcelFile.ReadWriteExcel@31c88ec8]" name="afterSuite" is-config="true" duration-ms="1" started-at="2018-11-11T17:53:01Z" finished-at="2018-11-11T17:53:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- test_assert.AssertTesting -->
+      </class> <!-- test_readWriteFromExcelFile.ReadWriteExcel -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
