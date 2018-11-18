@@ -42,6 +42,7 @@
           <include name="setUp"/>
           <include name="tearDown"/>
           <include name="tearDown"/>
+          <include name="test_fbLoginWithInvalidPassword"/>
         </methods>
       </class> <!-- test_fbLogin.TC2_LoginWithInvalidPassword -->
     </classes>

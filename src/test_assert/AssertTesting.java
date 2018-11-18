@@ -22,12 +22,15 @@ public class AssertTesting extends config {
 
 	@Test
 	public void testAssertion(){
-
+		APPLICATION_LOGS.debug("testAssertion testcase started");
+		APPLICATION_LOGS.debug(" ");
 		WebElement convertIntoText = driver.findElement(By.xpath(fl.signUpTextLoc));
 		String actText = convertIntoText.getText();
-		System.out.println ("Actual is : " +actText);
-
+		//System.out.println ("Actual is : " +actText);
+		// error
+		APPLICATION_LOGS.debug("Actual is : " +actText);
 		Assert.assertEquals(actText, fv.signUpValue);
+		APPLICATION_LOGS.debug("testAssertion testcase ended");
 	}
 
 	@Test

@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">15 methods, 5 failed,  7 skipped,  3 passed</span>
+                    <span class="method-stats">15 methods, 6 failed,  7 skipped,  2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -107,6 +107,11 @@
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-RegressionSuite" title="test_fbLogin.TC1_LoginWithInvalidCredential" hash-for-method="test_fbLoginWithInvalidCredential">test_fbLoginWithInvalidCredential</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionSuite" title="test_fbLogin.TC2_LoginWithInvalidPassword" hash-for-method="test_fbLoginWithInvalidPassword">test_fbLoginWithInvalidPassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -187,11 +192,6 @@
                         <a href="#" class="method navigator-link" panel-name="suite-RegressionSuite" title="test_assert.AssertTesting" hash-for-method="testAssertion">testAssertion</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-RegressionSuite" title="test_fbLogin.TC2_LoginWithInvalidPassword" hash-for-method="test_fbLoginWithInvalidPassword">test_fbLoginWithInvalidPassword</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                     </div> <!-- method-list-content passed suite-RegressionSuite -->
                   </li>
                 </ul>
@@ -223,8 +223,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:05:20.749Z&apos;
 System info: host: &apos;DESKTOP-D7B0KO9&apos;, ip: &apos;192.168.1.27&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\TALENT~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51226}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.102, webStorageEnabled: true}
-Session ID: e66ad4e2fe3d8dcf876182cbb075d57a
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\TALENT~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51870}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.102, webStorageEnabled: true}
+Session ID: 77565eab0ff464e5488173bf72583d4c
 *** Element info: {Using=id, value=}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
@@ -238,7 +238,7 @@ Session ID: e66ad4e2fe3d8dcf876182cbb075d57a
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
 	at org.openqa.selenium.By$ById.findElement(By.java:188)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at utils.SWDFunctions.dropDownByIdUsingValue(SWDFunctions.java:44)
+	at utils.SWDFunctions.dropDownByIdUsingValue(SWDFunctions.java:47)
 	at test_fbSignup.CreateFBAccount.verifyDropdownFuntionlity(CreateFBAccount.java:12)
 ... Removed 27 stack frames
 </div> <!-- stack-trace -->
@@ -254,8 +254,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:05:20.749Z&apos;
 System info: host: &apos;DESKTOP-D7B0KO9&apos;, ip: &apos;192.168.1.27&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 63.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 14616, moz:profile: C:\Users\talentTEK\AppData\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: bf57baf1-0e36-4899-b33e-2f7b53de1b7a
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 63.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 2716, moz:profile: C:\Users\talentTEK\AppData\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 07252d8a-a892-4fdb-a566-9263a45493e5
 *** Element info: {Using=id, value=}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -267,7 +267,7 @@ Session ID: bf57baf1-0e36-4899-b33e-2f7b53de1b7a
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
 	at org.openqa.selenium.By$ById.findElement(By.java:188)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at utils.SWDFunctions.dropDownByIdUsingValue(SWDFunctions.java:44)
+	at utils.SWDFunctions.dropDownByIdUsingValue(SWDFunctions.java:47)
 	at test_fbSignup.CreateFBAccount.verifyDropdownFuntionlity(CreateFBAccount.java:12)
 ... Removed 27 stack frames
 </div> <!-- stack-trace -->
@@ -293,8 +293,8 @@ Command duration or timeout: 0 milliseconds
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:05:20.749Z&apos;
 System info: host: &apos;DESKTOP-D7B0KO9&apos;, ip: &apos;192.168.1.27&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\TALENT~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51142}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.102, webStorageEnabled: true}
-Session ID: 4d4cd59c9e45093717d0084a0f6856c3
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\TALENT~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51780}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.102, webStorageEnabled: true}
+Session ID: bc1501afe77e11e1b058d215c6d51c40
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
@@ -305,7 +305,7 @@ Session ID: 4d4cd59c9e45093717d0084a0f6856c3
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at utils.SWDFunctions.clickByXpath(SWDFunctions.java:33)
+	at utils.SWDFunctions.clickByXpath(SWDFunctions.java:36)
 	at test_fbLogin.TC1_LoginWithInvalidCredential.test_fbLoginWithInvalidCredential(TC1_LoginWithInvalidCredential.java:23)
 ... Removed 27 stack frames
 </div> <!-- stack-trace -->
@@ -316,25 +316,21 @@ Session ID: 4d4cd59c9e45093717d0084a0f6856c3
                   <a name="test_fbLoginWithInvalidCredential">
                   </a> <!-- test_fbLoginWithInvalidCredential -->
                   <span class="method-name">test_fbLoginWithInvalidCredential</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@id=&apos;u_0_3&apos;]
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: Element &lt;input id=&quot;u_0_3&quot; name=&quot;timezone&quot; type=&quot;hidden&quot;&gt; could not be scrolled into view
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:05:20.749Z&apos;
 System info: host: &apos;DESKTOP-D7B0KO9&apos;, ip: &apos;192.168.1.27&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 63.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 3340, moz:profile: C:\Users\talentTEK\AppData\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 8fb618b9-0a94-40f1-abe3-3e6d3ef7e0be
-*** Element info: {Using=xpath, value=//*[@id=&apos;u_0_3&apos;]}
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 63.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 5116, moz:profile: C:\Users\talentTEK\AppData\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 429747eb-43ec-4a9e-af26-48d910c0b135
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at utils.SWDFunctions.clickByXpath(SWDFunctions.java:33)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at utils.SWDFunctions.clickByXpath(SWDFunctions.java:36)
 	at test_fbLogin.TC1_LoginWithInvalidCredential.test_fbLoginWithInvalidCredential(TC1_LoginWithInvalidCredential.java:23)
 ... Removed 27 stack frames
 </div> <!-- stack-trace -->
@@ -353,25 +349,51 @@ Session ID: 8fb618b9-0a94-40f1-abe3-3e6d3ef7e0be
                   <a name="test_fbLoginWithInvalidPassword">
                   </a> <!-- test_fbLoginWithInvalidPassword -->
                   <span class="method-name">test_fbLoginWithInvalidPassword</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@id=&apos;u_0_3&apos;]
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+                  <div class="stack-trace">org.openqa.selenium.ElementNotVisibleException: element not interactable
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:05:20.749Z&apos;
+System info: host: &apos;DESKTOP-D7B0KO9&apos;, ip: &apos;192.168.1.27&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\TALENT~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51827}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.102, webStorageEnabled: true}
+Session ID: f10f63f5d24248fe5b91ab1243672731
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at utils.SWDFunctions.clickByXpath(SWDFunctions.java:36)
+	at test_fbLogin.TC2_LoginWithInvalidPassword.test_fbLoginWithInvalidPassword(TC2_LoginWithInvalidPassword.java:23)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_fbLoginWithInvalidPassword">
+                  </a> <!-- test_fbLoginWithInvalidPassword -->
+                  <span class="method-name">test_fbLoginWithInvalidPassword</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: Element &lt;input id=&quot;u_0_3&quot; name=&quot;timezone&quot; type=&quot;hidden&quot;&gt; could not be scrolled into view
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:05:20.749Z&apos;
 System info: host: &apos;DESKTOP-D7B0KO9&apos;, ip: &apos;192.168.1.27&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 63.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 14148, moz:profile: C:\Users\talentTEK\AppData\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 4598cf75-42ae-4108-83e3-0d934c135343
-*** Element info: {Using=xpath, value=//*[@id=&apos;u_0_3&apos;]}
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 63.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 13324, moz:profile: C:\Users\talentTEK\AppData\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8b6ba4bc-1284-4901-a81c-1636cb6be8e0
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at utils.SWDFunctions.clickByXpath(SWDFunctions.java:33)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at utils.SWDFunctions.clickByXpath(SWDFunctions.java:36)
 	at test_fbLogin.TC2_LoginWithInvalidPassword.test_fbLoginWithInvalidPassword(TC2_LoginWithInvalidPassword.java:23)
 ... Removed 27 stack frames
 </div> <!-- stack-trace -->
@@ -428,7 +450,7 @@ Session ID: 4598cf75-42ae-4108-83e3-0d934c135343
                   </a> <!-- testSoftAssert -->
                   <span class="method-name">testSoftAssert</span>
                   <div class="stack-trace">org.testng.SkipException: Skipping it becuase this test case no longer needed: JIRA-1233
-	at test_assert.AssertTesting.testSoftAssert(AssertTesting.java:44)
+	at test_assert.AssertTesting.testSoftAssert(AssertTesting.java:46)
 ... Removed 23 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -439,7 +461,7 @@ Session ID: 4598cf75-42ae-4108-83e3-0d934c135343
                   </a> <!-- testSoftAssert -->
                   <span class="method-name">testSoftAssert</span>
                   <div class="stack-trace">org.testng.SkipException: Skipping it becuase this test case no longer needed: JIRA-1233
-	at test_assert.AssertTesting.testSoftAssert(AssertTesting.java:44)
+	at test_assert.AssertTesting.testSoftAssert(AssertTesting.java:46)
 ... Removed 23 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -486,21 +508,6 @@ Session ID: 4598cf75-42ae-4108-83e3-0d934c135343
                   <a name="testAssertion">
                   </a> <!-- testAssertion -->
                   <span class="method-name">testAssertion</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-RegressionSuite-class-passed -->
-          <div class="suite-RegressionSuite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">test_fbLogin.TC2_LoginWithInvalidPassword</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="test_fbLoginWithInvalidPassword">
-                  </a> <!-- test_fbLoginWithInvalidPassword -->
-                  <span class="method-name">test_fbLoginWithInvalidPassword</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -587,70 +594,70 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(15);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test_fbLoginWithInvalidPassword')
-data.setCell(0, 2, 'test_fbLogin.TC2_LoginWithInvalidPassword')
-data.setCell(0, 3, 3785);
+data.setCell(0, 1, 'test_fbLoginWithInvalidCredential')
+data.setCell(0, 2, 'test_fbLogin.TC1_LoginWithInvalidCredential')
+data.setCell(0, 3, 580);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'test_fbLoginWithInvalidCredential')
-data.setCell(1, 2, 'test_fbLogin.TC1_LoginWithInvalidCredential')
-data.setCell(1, 3, 475);
+data.setCell(1, 1, 'testSoftAssert')
+data.setCell(1, 2, 'test_assert.AssertTesting')
+data.setCell(1, 3, 536);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'test_fbLoginWithInvalidPassword')
 data.setCell(2, 2, 'test_fbLogin.TC2_LoginWithInvalidPassword')
-data.setCell(2, 3, 465);
+data.setCell(2, 3, 499);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testSoftAssert')
-data.setCell(3, 2, 'test_assert.AssertTesting')
-data.setCell(3, 3, 462);
+data.setCell(3, 1, 'verifyDropdownFuntionlity')
+data.setCell(3, 2, 'test_fbSignup.CreateFBAccount')
+data.setCell(3, 3, 475);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'test_fbLoginWithInvalidCredential')
-data.setCell(4, 2, 'test_fbLogin.TC1_LoginWithInvalidCredential')
-data.setCell(4, 3, 454);
+data.setCell(4, 1, 'test_fbLoginWithInvalidPassword')
+data.setCell(4, 2, 'test_fbLogin.TC2_LoginWithInvalidPassword')
+data.setCell(4, 3, 465);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyDropdownFuntionlity')
-data.setCell(5, 2, 'test_fbSignup.CreateFBAccount')
-data.setCell(5, 3, 388);
+data.setCell(5, 1, 'test_fbLoginWithInvalidCredential')
+data.setCell(5, 2, 'test_fbLogin.TC1_LoginWithInvalidCredential')
+data.setCell(5, 3, 461);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'testAssertion')
 data.setCell(6, 2, 'test_assert.AssertTesting')
-data.setCell(6, 3, 365);
+data.setCell(6, 3, 178);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'testSoftAssert')
 data.setCell(7, 2, 'test_assert.AssertTesting')
-data.setCell(7, 3, 163);
+data.setCell(7, 3, 170);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'testAssertion')
 data.setCell(8, 2, 'test_assert.AssertTesting')
-data.setCell(8, 3, 151);
+data.setCell(8, 3, 68);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'verifyDropdownFuntionlity')
 data.setCell(9, 2, 'test_fbSignup.CreateFBAccount')
-data.setCell(9, 3, 49);
+data.setCell(9, 3, 58);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'testSoftAssert')
-data.setCell(10, 2, 'test_assert.AssertTesting')
-data.setCell(10, 3, 0);
+data.setCell(10, 1, 'test_fbLoginWithInvalidPassword')
+data.setCell(10, 2, 'test_fbLogin.TC2_LoginWithInvalidPassword')
+data.setCell(10, 3, 1);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'verifyDropdownFuntionlity')
-data.setCell(11, 2, 'test_fbSignup.CreateFBAccount')
+data.setCell(11, 1, 'test_fbLoginWithInvalidCredential')
+data.setCell(11, 2, 'test_fbLogin.TC1_LoginWithInvalidCredential')
 data.setCell(11, 3, 0);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'testAssertion')
 data.setCell(12, 2, 'test_assert.AssertTesting')
 data.setCell(12, 3, 0);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'test_fbLoginWithInvalidPassword')
-data.setCell(13, 2, 'test_fbLogin.TC2_LoginWithInvalidPassword')
+data.setCell(13, 1, 'testSoftAssert')
+data.setCell(13, 2, 'test_assert.AssertTesting')
 data.setCell(13, 3, 0);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'test_fbLoginWithInvalidCredential')
-data.setCell(14, 2, 'test_fbLogin.TC1_LoginWithInvalidCredential')
+data.setCell(14, 1, 'verifyDropdownFuntionlity')
+data.setCell(14, 2, 'test_fbSignup.CreateFBAccount')
 data.setCell(14, 3, 0);
 window.suiteTableData['RegressionSuite']= { tableData: data, tableDiv: 'times-div-RegressionSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-RegressionSuite">
               </div> <!-- times-div-RegressionSuite -->
             </div> <!-- times-div -->
@@ -752,158 +759,160 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(ch)</span>
-                <span class="method-start">22 ms</span>
+                <span class="method-start">34 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">test_fbLoginWithInvalidCredential</span>
-                <span class="method-start">7191 ms</span>
+                <span class="method-start">8008 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">7646 ms</span>
+                <span class="method-start">8470 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test_fbLogin.TC2_LoginWithInvalidPassword</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(ch)</span>
-                <span class="method-start">9772 ms</span>
+                <span class="method-start">10627 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">test_fbLoginWithInvalidPassword</span>
-                <span class="method-start">14445 ms</span>
+                <span class="method-start">16552 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">18230 ms</span>
+                <span class="method-start">17051 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test_fbSignup.CreateFBAccount</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(ch)</span>
-                <span class="method-start">20409 ms</span>
+                <span class="method-start">19189 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyDropdownFuntionlity</span>
-                <span class="method-start">25190 ms</span>
+                <span class="method-start">23903 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">25578 ms</span>
+                <span class="method-start">24379 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test_assert.AssertTesting</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(ch)</span>
-                <span class="method-start">27696 ms</span>
+                <span class="method-start">26493 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testAssertion</span>
-                <span class="method-start">32373 ms</span>
+                <span class="method-start">32663 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">32738 ms</span>
+                <span class="method-start">32731 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(ch)</span>
-                <span class="method-start">34878 ms</span>
+                <span class="method-start">34852 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSoftAssert</span>
-                <span class="method-start">39681 ms</span>
+                <span class="method-start">39811 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">40143 ms</span>
+                <span class="method-start">40347 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test_fbLogin.TC1_LoginWithInvalidCredential</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">42262 ms</span>
+                <span class="method-start">42522 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(ff)</span>
-                <span class="method-start">42895 ms</span>
+                <span class="method-start">43152 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">test_fbLoginWithInvalidCredential</span>
-                <span class="method-start">49693 ms</span>
+                <span class="method-start">50214 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">50168 ms</span>
+                <span class="method-start">50795 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test_fbLogin.TC2_LoginWithInvalidPassword</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(ff)</span>
-                <span class="method-start">51299 ms</span>
+                <span class="method-start">52104 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">test_fbLoginWithInvalidPassword</span>
-                <span class="method-start">73805 ms</span>
+                <span class="method-start">59103 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">74270 ms</span>
+                <span class="method-start">59568 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test_fbSignup.CreateFBAccount</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(ff)</span>
-                <span class="method-start">75372 ms</span>
+                <span class="method-start">60677 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyDropdownFuntionlity</span>
-                <span class="method-start">81331 ms</span>
+                <span class="method-start">67188 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">81380 ms</span>
+                <span class="method-start">67246 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test_assert.AssertTesting</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(ff)</span>
-                <span class="method-start">82611 ms</span>
+                <span class="method-start">68565 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testAssertion</span>
-                <span class="method-start">88674 ms</span>
+                <span class="method-start">74951 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">88825 ms</span>
+                <span class="method-start">75130 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(ff)</span>
-                <span class="method-start">89937 ms</span>
+                <span class="method-start">76427 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSoftAssert</span>
-                <span class="method-start">96201 ms</span>
+                <span class="method-start">83482 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">96364 ms</span>
+                <span class="method-start">83652 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -912,42 +921,42 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">97478 ms</span>
+                <span class="method-start">90688 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-method before">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">setUp(ie)</span>
-                <span class="method-start">97605 ms</span>
+                <span class="method-start">90817 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test_fbLoginWithInvalidCredential</span>
-                <span class="method-start">97606 ms</span>
+                <span class="method-start">90818 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test_fbLogin.TC2_LoginWithInvalidPassword</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">test_fbLoginWithInvalidPassword</span>
-                <span class="method-start">97606 ms</span>
+                <span class="method-start">90818 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test_fbSignup.CreateFBAccount</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyDropdownFuntionlity</span>
-                <span class="method-start">97607 ms</span>
+                <span class="method-start">90819 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test_assert.AssertTesting</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testAssertion</span>
-                <span class="method-start">97607 ms</span>
+                <span class="method-start">90820 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testSoftAssert</span>
-                <span class="method-start">97608 ms</span>
+                <span class="method-start">90820 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

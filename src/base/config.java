@@ -27,13 +27,16 @@ public class config extends SWDFunctions {
 		if (browser.equalsIgnoreCase("ff")){
 			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"//Drivers//geckodriver.exe");	
 			driver = new FirefoxDriver();
+			APPLICATION_LOGS.debug("Firefox browser started");
 		} else if (browser.equalsIgnoreCase("ch")) {
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//Drivers//chromedriver.exe");	
 			driver = new ChromeDriver();
+			APPLICATION_LOGS.debug("Chrome browser started");
 		} else
 			System.out.print("THERE ARE NO BROWSER TO TEST");
 
 		driver.get("https://www.facebook.com");
+		APPLICATION_LOGS.debug("Went to facebook");
 	}
 
 	@AfterMethod
