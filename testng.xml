@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-	<test name="Test">
+<suite name="RegressionSuite">
 
+	<!-- ================== CHROME TEST =============== -->
+	<test name="Chrome test">
+		<parameter name="browser" value="ch"></parameter>
 		<classes>
-
 			<!-- Test from facebook Login feature -->
 			<class name="test_fbLogin.TC1_LoginWithInvalidCredential" />
 			<class name="test_fbLogin.TC2_LoginWithInvalidPassword" />
@@ -12,13 +13,35 @@
 			<class name="test_fbSignup.CreateFBAccount" />
 			<!-- Test from ASSERT feature -->
 			<class name="test_assert.AssertTesting"></class>
-			
-			
 		</classes>
-
-
-
-
-
 	</test> <!-- Test -->
+
+	<!-- ================== FIRE-FOX TEST =============== -->
+	<test name="Firefox test">
+		<parameter name="browser" value="ff"></parameter>
+		<classes>
+			<!-- Test from facebook Login feature -->
+			<class name="test_fbLogin.TC1_LoginWithInvalidCredential" />
+			<class name="test_fbLogin.TC2_LoginWithInvalidPassword" />
+			<!-- Test from facebook signup feature -->
+			<class name="test_fbSignup.CreateFBAccount" />
+			<!-- Test from ASSERT feature -->
+			<class name="test_assert.AssertTesting"></class>
+		</classes>
+	</test> <!-- Test -->
+
+	<!-- ================== IE TEST =============== -->
+	<test name="Internet Exp test">
+		<parameter name="browser" value="ie"></parameter>
+		<classes>
+			<!-- Test from facebook Login feature -->
+			<class name="test_fbLogin.TC1_LoginWithInvalidCredential" />
+			<class name="test_fbLogin.TC2_LoginWithInvalidPassword" />
+			<!-- Test from facebook signup feature -->
+			<class name="test_fbSignup.CreateFBAccount" />
+			<!-- Test from ASSERT feature -->
+			<class name="test_assert.AssertTesting"></class>
+		</classes>
+	</test> <!-- Test -->
+
 </suite> <!-- Suite -->

@@ -1,5 +1,6 @@
 package utils;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,12 +10,14 @@ public class SWDFunctions {
 
 	// init the webdriver
 	public WebDriver driver;
+	public static Logger APPLICATION_LOGS = Logger.getLogger("myLogs");
 
 	// getText
 	public void getTextByXpath (String loc){
 		WebElement convertIntoText = driver.findElement(By.xpath(loc));
 		String actText = convertIntoText.getText();
 		System.out.println ("Actual is : " +actText);
+		APPLICATION_LOGS.debug("Actual is : " +actText);
 	}
 	// to type
 	public void typeByXpath (String locator, String value){

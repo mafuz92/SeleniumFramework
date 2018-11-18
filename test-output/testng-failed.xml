@@ -1,18 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [RegressionSuite]">
+  <parameter name="browser" value="ie"/>
+  <test name="Chrome test(failed)">
+    <parameter name="browser" value="ch"/>
     <classes>
-      <class name="test_assert.AssertTesting">
+      <class name="test_fbSignup.CreateFBAccount">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="verifyDropdownFuntionlity"/>
+        </methods>
+      </class> <!-- test_fbSignup.CreateFBAccount -->
+      <class name="test_fbLogin.TC1_LoginWithInvalidCredential">
         <methods>
           <include name="beforeSuite"/>
-          <include name="afterSuite"/>
-          <include name="testSoftAssert"/>
+          <include name="closeDriver"/>
           <include name="closeDriver"/>
           <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="test_fbLoginWithInvalidCredential"/>
+        </methods>
+      </class> <!-- test_fbLogin.TC1_LoginWithInvalidCredential -->
+      <class name="test_assert.AssertTesting">
+        <methods>
+          <include name="testSoftAssert"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- test_assert.AssertTesting -->
+      <class name="test_fbLogin.TC2_LoginWithInvalidPassword">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="test_fbLoginWithInvalidPassword"/>
+        </methods>
+      </class> <!-- test_fbLogin.TC2_LoginWithInvalidPassword -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Chrome test(failed) -->
+  <test name="Firefox test(failed)">
+    <parameter name="browser" value="ff"/>
+    <classes>
+      <class name="test_fbSignup.CreateFBAccount">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="verifyDropdownFuntionlity"/>
+        </methods>
+      </class> <!-- test_fbSignup.CreateFBAccount -->
+      <class name="test_fbLogin.TC1_LoginWithInvalidCredential">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="closeDriver"/>
+          <include name="closeDriver"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="test_fbLoginWithInvalidCredential"/>
+        </methods>
+      </class> <!-- test_fbLogin.TC1_LoginWithInvalidCredential -->
+      <class name="test_assert.AssertTesting">
+        <methods>
+          <include name="testSoftAssert"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- test_assert.AssertTesting -->
+      <class name="test_fbLogin.TC2_LoginWithInvalidPassword">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="test_fbLoginWithInvalidPassword"/>
+        </methods>
+      </class> <!-- test_fbLogin.TC2_LoginWithInvalidPassword -->
+    </classes>
+  </test> <!-- Firefox test(failed) -->
+  <test name="Internet Exp test(failed)">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="test_fbSignup.CreateFBAccount">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="verifyDropdownFuntionlity"/>
+        </methods>
+      </class> <!-- test_fbSignup.CreateFBAccount -->
+      <class name="test_fbLogin.TC1_LoginWithInvalidCredential">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="closeDriver"/>
+          <include name="closeDriver"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="test_fbLoginWithInvalidCredential"/>
+        </methods>
+      </class> <!-- test_fbLogin.TC1_LoginWithInvalidCredential -->
+      <class name="test_assert.AssertTesting">
+        <methods>
+          <include name="testAssertion"/>
+          <include name="testSoftAssert"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- test_assert.AssertTesting -->
+      <class name="test_fbLogin.TC2_LoginWithInvalidPassword">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="test_fbLoginWithInvalidPassword"/>
+        </methods>
+      </class> <!-- test_fbLogin.TC2_LoginWithInvalidPassword -->
+    </classes>
+  </test> <!-- Internet Exp test(failed) -->
+</suite> <!-- Failed suite [RegressionSuite] -->

@@ -38,13 +38,7 @@ public class ReadWriteExcel extends config {
 		
 		String RK = driver.findElement(By.xpath(logIn.signUpTextLoc)).getText();
 		System.out.println (RK); //Sign Up
-		
-		// java code
-		RK holding = Total $5000.00
-				// substing
-				String finalValu 
-		
-		xl.setCellData("fb", "Expected", 5, finalValu);
+	
 		
 
 	}
